@@ -1,0 +1,611 @@
+* {
+    
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Arial, sans-serif;
+    padding: 2rem;
+}
+
+body a{
+    text-decoration: none;
+    color: #4e1b07;
+}
+
+.header {
+    background: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    background: #ffffff;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #384741;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.main-content {
+    max-width: 1200px;
+    margin: 2rem auto;
+    padding: 0 1rem;
+    display: flex;
+    gap: 2rem;
+    align-items: flex-start;
+}
+
+.main-image {
+    width: 40%;
+    height: auto;
+    background: #ffffff;
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
+.content h1{
+    font-family: Manrope, serif;
+    text-align: left;
+    font-size: 2.2rem;
+}
+
+.button {
+    display: inline-block;
+    background: #ff993a;
+    color: #582e1d;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+
+-----------------------------------------------------
+
+.request-attend {
+    display: flex;
+    justify-content: space-around;
+    max-width: 70%;
+    margin: auto 10px;
+    padding: 20px 30px;
+    border: 1px solid #5c7d75;
+    text-align: center;
+    
+}
+
+.attend-heading h2{
+    color: #213827;
+    font-size: 2rem;
+    font-family: Manrope, serif;
+}
+
+.program-selector {
+    margin: 2rem auto;
+}
+
+.dropdown {
+    width: 100%;
+    max-width: 400px;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background: white;
+}
+
+.programs-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+    margin: 2rem;
+}
+
+.program-card {
+    background: white;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    display: none;  /* Hidden by default */
+}
+
+.program-card.active {
+    display: block;  /* Shown when active */
+}
+
+.program-title {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.program-details {
+    margin-bottom: 1.5rem;
+    color: #666;
+    line-height: 1.6;
+}
+
+.request-btn {
+    background: #ff993a;
+    color: rgb(85, 47, 35);
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.request-btn:hover {
+    background: #d67e2c;
+}
+
+.initial-message {
+    text-align: center;
+    color: #666;
+    padding: 2rem;
+    font-style: italic;
+}
+
+------------------------------------------------------
+
+.booking{
+    
+    width: 100%;
+    height: 800px;
+    border: 1px solid #cbcbcb;
+    padding: 2rem;
+}
+
+#BTL_client{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+    margin-bottom: 30px;
+}
+
+-------------------------------------------------------
+h2 {
+    margin-bottom: 1.5rem;
+    color: #333;
+}
+
+.sharings {
+    max-width: 1200px;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.testimonials-wrapper {
+    position: relative;
+    margin-bottom: 2rem;
+}
+
+.testimonials-track {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.testimonial-card {
+    min-width: calc(33.333% - 2rem);
+    margin: 0 1rem;
+    display: flex;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: border-color 0.3s ease;
+}
+
+.testimonial-card.active {
+    border: 2px solid #f0824f;
+}
+
+.testimonial-image {
+    width: 40%;
+    height: auto;
+    background: #f0f0f0;
+    flex-shrink: 0;
+}
+
+.testimonial-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+}
+
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 0.5rem;
+    background: #f0f0f0;
+    padding: 0.5rem;
+    border-radius: 20px;
+    width: fit-content;
+    margin: 0 auto;
+}
+
+.dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.dot.active {
+    background: #f88d46;
+}
+
+------------------------------------
+
+.other-programs {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.other-programs img{
+    width: 80%;
+    height: auto;
+}
+
+.title {
+    color: #213827;
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+.blocks {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.block {
+    flex: 1;
+    max-width: 300px;
+    padding: 20px;
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle-image {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.block-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.text {
+    margin: 8px 0;
+    color: #666;
+    text-align: center;
+}
+
+.button2 {
+    background-color: #ff993a;
+    color: rgb(49, 26, 26);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-top: 15px;
+    font-size: 1.2rem;
+}
+
+.button:hover {
+    background-color: #e7772d;
+}
+
+*-------------------------------------
+
+.mukul {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: start;
+}
+
+.left-section {
+    text-align: center;
+}
+
+.profile-image {
+    width: 50%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+}
+
+.left-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #333333;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contentmukul p{
+    font-size: 1.5rem;
+    text-align: center;
+    color: #4b4a4a;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 20%;
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    margin-bottom: 20px;
+    left: 30%;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 300px;
+    border: none;
+}
+
+--------------------------------------
+
+.contact-section {
+    text-align: center;
+    
+    color: #333;
+    margin-top: 30px;
+  }
+  
+#contactus{
+    background-image: url('Asset_1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    padding: 50px;
+}
+  .contact-section h1 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .contact-section h2 {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 20px 0 10px;
+  }
+  
+  .contact-section p {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .contentmukul{
+    margin-bottom: 20px;
+  }
+  
+  .contact-section .form-link {
+    text-decoration: none;
+    background-color: #fff3e7;
+    border: 0.5px solid black;
+    padding: 10px;
+    border-radius: 20px;
+    color: #181818;
+    font-weight: 600;
+  }
+  
+  .contact-section .form-link:hover {
+    color: #000000;
+  }
+
+@media screen and (max-width: 425px) {
+    html,body{
+        width : 100%;
+        height : auto;
+        margin : 0;
+        padding : 0.5rem;
+        overflow-x: hidden;
+    }
+    
+    
+    .content h1 {
+        font-size: 1.3rem;
+    }
+    
+    .button {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    
+    .attend-heading h2 {
+        font-size: 1.3rem;
+    }
+    
+    .button2 {
+        font-size: 1rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 120px;
+        height: 40px;
+    }
+    
+    .menu {
+        flex-direction: column;
+        padding: 0;
+        gap: 0.5rem;
+    }
+    
+    .call-us {
+        font-size: 0.9rem;
+    }
+    
+    /* Main Content */
+    .main-content {
+        flex-direction: column;
+        max-width: 400px;
+        padding: 0;
+        gap: 1rem;
+    }
+    
+    .main-image {
+        width: 100%;
+    }
+    
+    .content h1 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+    .button {
+        width: 100%;
+        font-size: 1.2rem;
+        text-align: center;
+    }
+    
+    /* Request Attend Section */
+    .request-attend {
+        max-width: 100%;
+        margin: 10px 0;
+        padding: 15px;
+        flex-direction: column;
+    }
+    
+    .attend-heading h2 {
+        font-size: 1.5rem;
+    }
+    
+    /* Programs Grid */
+    .programs-grid {
+        grid-template-columns: 1fr;
+        margin: 1rem 0;
+        gap: 1rem;
+    }
+    
+    /* Booking Section */
+    .booking {
+        height: auto;
+        padding: 1rem;
+    }
+    
+    #BTL_client {
+        margin: 1rem 0;
+    }
+    
+    #BTL_client iframe {
+        width: 100%;
+        height: 600px;
+    }
+    
+    /* Testimonials */
+    .testimonial-card {
+        min-width: 80%;
+        flex-direction: column;
+    }
+    
+    .testimonial-image {
+        width: 100%;
+        height: 200px;
+    }
+    
+    /* Other Programs */
+    .blocks {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .block {
+        max-width: 100%;
+    }
+    
+    /* Mukul Section */
+    .mukul {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .profile-image {
+        width: 70%;
+    }
+    
+    .video-container {
+        padding-bottom: 56.25%;
+        left: 10px;
+    }
+    
+    .video-container iframe {
+        width: 100%;
+        height: 100%;
+    }
+    
+    .contentmukul p {
+        font-size: 1.2rem;
+    }
+    
+    /* Contact Section */
+    #contactus {
+        height: auto;
+        padding: 20px;
+    }
+    
+    .contact-section h1 {
+        font-size: 1.8rem;
+    }
+}

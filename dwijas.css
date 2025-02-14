@@ -1,0 +1,383 @@
+:root {
+    --abutton: #ffb46e;
+    --inbutton: #ffffff;
+  }
+
+  body a{
+    text-decoration: none;
+    color: #4e1b07;
+}
+
+.header {
+    background: #fff;
+    padding: 1rem;
+    border-bottom: 1px solid #ddd;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    justify-content: space-around;
+}
+
+.logo {
+    width: 150px;
+    height: 50px;
+    background: #ffffff;
+}
+
+.menu {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #384741;
+    font-weight: 700;
+    margin-right: 15px;
+}
+
+.hero-image {
+    margin: 2rem auto;
+}
+
+.hero-container{
+
+    background: linear-gradient(to bottom, #ffb87e, #ffdfc2 30%, #ffffff);
+}
+
+.datetime{
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #3a3431;
+    line-height: 2rem;
+    margin: 40px auto;
+}
+
+.hero-container h1{
+    font-weight: 700;
+    font-size: 3.5rem;
+    font-family: Manrope, Sans-serif;
+    color: #000;
+}
+
+.cta-button {
+    background-color: #ff9752;
+    color: #241000;
+    padding: 12px 40px;
+    border: none;
+    font-family: Manrope, Sans-serif;
+    transition: background-color 0.3s;
+    border-radius: 50px;
+    font-size: 2rem;
+}
+
+.cta-button:hover {
+    background-color: #fa6825;
+}
+
+.icon-box {
+    width: 24px;
+    height: 24px;
+    border: 2px solid #000;
+    position: relative;
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.icon-box::before,
+.icon-box::after {
+    content: '';
+    position: absolute;
+    background-color: #000;
+}
+
+.correct{
+    position: absolute;
+    margin-left: 2px;
+}
+
+.aspect-card {
+    border: 1px solid #dee2e6;
+    padding: 1.5rem;
+    height: 100%;
+}
+
+.benefits{
+    margin: 4rem auto;
+    color: #000;
+}
+
+.benefits-container{
+    width: 800px;
+    margin: 10px auto;
+}
+
+.benefit-item {
+    
+    padding: 1rem;
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
+---------------------------------------TESTIMONIAl-------------------------------------------
+
+.review-box {
+    border-bottom: 1px solid #dee2e6;
+    padding: 15px 0;
+    margin: 3rem auto;
+}
+
+.review-container{
+    
+    margin-bottom: 45px;
+}
+
+.review-text {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    line-height: 1.8rem;
+}
+
+.review-info {
+    font-size: 1.5rem;
+    color: #6c757d;
+}
+
+.placeholder-img {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.placeholder-img img{
+    width: 275px;
+    height: auto;
+}
+
+.container-test hr{
+    margin-bottom: 3rem;
+}
+---------------------------------------TAB-CONTENTS-------------------------------------------
+
+section {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tab-container {
+    max-width: 800px;
+    width: 100%;
+    padding: 20px;
+    margin: 100px auto;
+}
+
+.nav-tabs .nav-link {
+    color: #000;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-size: 2rem;
+}
+
+.nav-tabs .nav-link.active {
+    font-weight: bold;
+}
+
+.join-buttons button{
+    font-size: 1.2rem;
+}
+
+.content-box {
+    border: 1px solid #dee2e6;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.content-box p{
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.join-buttons {
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.join-buttons img{
+    width: 30px;
+    height: auto;
+    margin-left: 8px;
+}
+
+.join-buttons .btn {
+    margin-right: 15px;
+    background-color: #ffb87e;
+    color: #000;
+}
+
+.phone-text {
+    margin-top: 15px;
+    font-size: 1.1rem;
+}
+
+.content-box h4{
+    font-size: 2rem;
+}
+
+.enquiry-form-btn {
+    background-color: #ffb87e;
+    color: rgb(29, 29, 29);
+    padding: 8px 20px;
+    border: none;
+    font-size: 1.8rem;
+}
+
+.content-box .mt-4{
+    font-size: 1.8rem;
+    line-height: 2.2rem;
+    color: #3a3431;
+}
+
+.footer-container {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  .social-icons a {
+    color: #666;
+    margin-right: 10px;
+    font-size: 1.2rem;
+    transition: color 0.3s ease;
+  }
+  .social-icons a:hover {
+    color: #333;
+  }
+
+
+
+@media screen and (max-width: 450px) {
+    html,body{
+        width : 100%;
+        height : auto;
+        margin : 0;
+        padding : 0;
+        overflow-x: hidden;
+    }
+
+    .hero-image img{
+
+        width: 200px;
+        height: 100px;
+    }
+
+    .hero-container h1{
+        font-size: 1.8rem;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+    }
+    
+    .logo {
+        width: 120px;
+        height: 40px;
+    }
+    
+    .menu {
+        flex-direction: column;
+        padding: 0;
+        gap: 0.5rem;
+    }
+    
+    .call-us {
+        font-size: 0.9rem;
+    }
+
+    .benefits-container {
+        width: 80%;
+        margin: 10px auto;
+        font-size: smaller;
+    }
+
+    .icon-box{
+        visibility: hidden
+    }
+
+    .icon-box span{
+        width: 80%;
+    }
+
+    .placeholder-img img {
+        width: 180px;
+        height: auto;
+    }
+
+    .review-text {
+        
+        font-size: 1rem;
+        margin-bottom: 0px;
+        line-height: 1.8rem;
+    }
+
+    .review-info{
+        font-size: 0.8rem;
+    color: #6c757d;
+
+    }
+
+    .py-4{
+        padding: 2rem;
+    }
+
+    .container-test hr{
+    width: 100%;
+    text-align: left;
+    margin-left: 0px;
+    color: rgb(75, 75, 75);
+    }
+
+    .content-box h4 {
+        font-size: 1.2rem;
+    }
+
+    .join-buttons .btn {
+        margin-right: 15px;
+        background-color: #ffb87e;
+        color: #000;
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    .content-box p {
+        font-size: 1.2rem;
+        line-height: 1.1rem;
+    }
+
+    .content-box .mt-4 {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+
+    .footer-container {
+        text-align: center;
+      }
+      .social-icons {
+        margin-top: 10px;
+      }
+    
+    
+}
