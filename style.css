@@ -6,6 +6,7 @@
 body{
     font-family: Arial, sans-serif;
     padding: 2rem;
+    margin-top: 2rem;
 }
 
 body a{
@@ -53,10 +54,6 @@ body a{
     color: #384741;
     font-weight: 700;
     margin-right: 15px;
-}
-
-body{
-    padding-top:50px;
 }
 
 .main-content {
