@@ -17,6 +17,16 @@ body a{
     background: #fff;
     padding: 1rem;
     border-bottom: 1px solid #ddd;
+    
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
+  /* Add some shadow for visual separation */
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+
 }
 
 .nav {
@@ -43,6 +53,10 @@ body a{
     color: #384741;
     font-weight: 700;
     margin-right: 15px;
+}
+
+body{
+    padding-top:50px;
 }
 
 .main-content {
